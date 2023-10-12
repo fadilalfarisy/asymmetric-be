@@ -115,6 +115,8 @@ app.post('/decode', (req, res) => {
   })
 })
 
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT, () => {
   console.log(`server is running on port ${process.env.PORT}`);
 })
